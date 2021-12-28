@@ -6,18 +6,29 @@ window.addEventListener("load", ()=>{
 
     const btn = document.querySelector("#btnToClick");
 
-    const info= document.querySelector(".click").value;
+    const info= document.querySelector(".click");
 
 
     btn.addEventListener("click", ()=>{
-        console.log(info);
-    })
+        console.log(info.value);
+    });
 
 
     // 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
 
+    const secondInput= document.querySelector(".focus");
+
+    secondInput.addEventListener("focus", ()=>{
+        console.log(secondInput.value);
+    })
+
 
     // 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 
+    const value= document.querySelector(".value");
+
+    value.addEventListener("input", ()=>{
+        console.log(value.value);
+    })
 
 })
